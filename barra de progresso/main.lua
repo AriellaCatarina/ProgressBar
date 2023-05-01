@@ -1,3 +1,4 @@
+local button = require ("button")
 Fonte1 = love.graphics.newFont ("Bohemian Typewriter.ttf")
 --text = love.graphics.newText(Fonte1, "Esta barra de progresso leva 1 minuto para completar")
 
@@ -22,6 +23,8 @@ function love.draw()
    -- Desenha o progresso atual
    love.graphics.setColor(0, 0.5, 1) -- Azul claro
   love.graphics.rectangle("fill", 100, 100, 200 * (progressCurrent / progressMax), 20) --love.graphics.rectangle( mode*, x, y, width, height, rx**, ry***, segments**** )
+   
+   button.draw ()
 
 end
 
